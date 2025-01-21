@@ -1,0 +1,85 @@
+body {
+  background-color: #f3f9ff;
+}
+/* ヘッダー */
+header h1 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+/* メイン */
+/* メインビジュアル */
+
+.mainvisual {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main img {
+  width: 100%;
+  object-fit: cover;
+}
+/* メインINDEX */
+.INDEX{
+  background-color: #ffffff;
+  margin: 40px auto
+}
+.INDEX_container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.INDEX_container h2 {
+  font-size: 24px;
+}
+.INDEX_container ol {
+  font-size: 16px;
+  line-height: 32px;
+}
+/* メインDETAIL */
+.DETAIL{
+  margin: 0 auto;
+}
+.DETAIL{
+  width: 60%;
+  margin: 0 auto;
+}
+.DETAIL h2{
+  font-size: 24px;
+}
+.DETAIL_container{
+display: flex;
+justify-content: space-between;
+}
+.DETAIL_photo{
+  max-width: 600px;
+}
+.detail_photo img{
+  width: 100%;
+  object-fit: cover;
+}
+.DETAIL_index{
+  margin-left: 48px;
+}
+.table{
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+  padding: 16px 0;
+  font-size: 16px;
+}
+.table th{
+  width: 80px;
+  text-align: left;
+}
+.DETAIL_index p{
+  font-size: 16px;
+}
+/* フッター */
+footer{
+  margin-left: 20%;
+  margin-top: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .DETAIL_container{
+   flex-direction: column;
+  }
+}
