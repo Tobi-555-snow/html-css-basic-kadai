@@ -1,0 +1,169 @@
+/* ヘッダー */
+header {
+  max-width: 1000px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+/* メイン */
+/* メインビジュアル */
+.mainvisual {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+.mainvisual img {
+  width: 100%;
+  object-fit: cover;
+}
+/* メインindex */
+.index_box {
+  max-width: 800px;
+  background-color: #f3f3f3;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 64px;
+  margin-bottom: 80px;
+}
+.index_box h2 {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  font-weight: bold;
+}
+
+ul,
+ol {
+  list-style-type: decimal;
+}
+.index_box ol {
+  border: solid 1px;
+  line-height: 32px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 32px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+li {
+  margin-left: 20%;
+}
+/* メイン4つの写真 */
+.photobox {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.photobox_left {
+  max-width: 395px;
+}
+.photobox_left img {
+  width: 100%;
+  margin-bottom: 8px;
+  object-fit: cover;
+}
+.photobox_right {
+  max-width: 395px;
+}
+.photobox_right img {
+  width: 100%;
+  margin-bottom: 8px;
+  object-fit: cover;
+}
+/* メインDETAILS */
+.details {
+  max-width: 800px;
+  background-color: #f3f3f3;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 64px;
+  margin-bottom: 80px;
+}
+.details h2 {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  font-weight: bold;
+}
+.text_flex {
+  display: flex;
+}
+
+section.text_left {
+  width: 30%;
+  margin-left: 10%;
+}
+
+section.text_right {
+  width: 50%;
+  padding-left: 32px;
+  border-left: solid 1px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* フッター */
+footer {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .photobox {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .index_box ol {
+    padding-left: 0;
+  }
+
+  section.text_left {
+    width: 90%;
+    margin-left: 0;
+    padding-left: 32px;
+  }
+  section.text_right {
+    width: 90%;
+    padding-left: 32px;
+    padding-top: 32px;
+    border-left: solid 0;
+    border-top: solid 1px;
+  }
+  .text_flex {
+    flex-direction: column;
+  }
+
+  li {
+    margin-left: 10%;
+  }
+
+  .photobox_left {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photobox_right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
