@@ -1,0 +1,84 @@
+/* フォント指定 */
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+/* メインビジュアル */
+main img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 96px;
+}
+/* text */
+main #text {
+  text-align: center;
+}
+main #text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+main #text p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 96px;
+}
+/* photobox */
+main #photobox {
+  display: flex;
+  width: 100%;
+}
+main #photobox img {
+  max-width: 33%;
+  height: 500px;
+  object-fit: cover;
+
+}
+/* レシピ一覧を見る画面遷移 */
+main #gotoreceipe {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+main #gotoreceipe p {
+  padding: 16px 32px;
+  border: solid 1px #000;
+}
+
+/* フッター */
+footer #sns{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 32px;
+}
+footer #sns a{
+  border-bottom: solid 1px #000;
+}
+
+footer p{
+  text-align: center;
+}
+
+@media screen and (max-width: 834px) {
+  main #mainvisual{
+    object-view-box:inset(0 35% 5% 35%)
+  }
+  main #photobox{
+    flex-direction: column;
+  }
+  main #photobox img{
+    max-width: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+  main #gotoreceipe{
+    margin-top: 96px;
+  }
+  footer #sns {
+    font-size: 70%;
+  }
+  footer p{
+    font-size: 70%;
+  }
+}
